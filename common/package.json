@@ -1,6 +1,7 @@
 {
-  "name": "@100xdevs/medium-common",
+  "name": "@maya15088501/techtales-common",
   "version": "1.0.0",
+  "private": false,
   "description": "",
   "main": "dist/index.js",
   "scripts": {
