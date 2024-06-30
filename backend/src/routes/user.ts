@@ -30,6 +30,7 @@ userRouter.post("/signup", async (c) => {
         username: body.username,
         password: body.password,
         name: body.name,
+        email: body.email,
       },
     });
     const jwt = await sign(
@@ -71,7 +72,7 @@ userRouter.post("/signin", async (c) => {
     if (!user) {
       c.status(403);
       return c.json({
-        message: "Incorrect creds",
+        message: "Incorrect credentials",
       });
     }
     const jwt = await sign(
